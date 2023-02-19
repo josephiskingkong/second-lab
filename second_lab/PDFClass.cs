@@ -9,6 +9,7 @@ namespace second_lab
             Console.WriteLine($"Name: {Name}, Author: {Author}, Key words: {KeyWords}, " +
                 $"Theme: {Theme}, Path to the file: {PathToFile}, File extension: {FileExtension}, " +
                 $"File extensions that can be opened: {OtherFileExtension}");
+            Console.ReadKey();
         }
         public PDF(string Name, string Author, string KeyWords, string Theme, string PathToFile, string FileExtension,
             string OtherFileExtension)

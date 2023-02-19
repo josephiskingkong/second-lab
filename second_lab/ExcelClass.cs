@@ -11,6 +11,7 @@ namespace second_lab
                 $"Theme: {Theme}, Path to the file: {PathToFile}, File extension: {FileExtension}, " +
                 $"Count of rows: {RowCount}, " +
                 $"Count of columns: {ColumnCount}");
+            Console.ReadKey();
         }
         public Excel(string Name, string Author, string KeyWords, string Theme, string PathToFile, string FileExtension,
             int RowCount, int ColumnCount)

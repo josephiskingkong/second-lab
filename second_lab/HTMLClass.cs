@@ -9,6 +9,7 @@ namespace second_lab
             Console.WriteLine($"Name: {Name}, Author: {Author}, Key words: {KeyWords}, " +
                 $"Theme: {Theme}, Path to the file: {PathToFile}, File extension: {FileExtension}, " +
                 $"Friendly code languages: {FriendlyLanguages}");
+            Console.ReadKey();
         }
         public HTML(string Name, string Author, string KeyWords, string Theme, string PathToFile, string FileExtension,
             string FriendlyLanguages)

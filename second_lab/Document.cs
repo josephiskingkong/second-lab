@@ -14,6 +14,7 @@ namespace second_lab
         {
             Console.WriteLine($"Name: {Name}, Author: {Author}, Key words: {KeyWords}" +
                 $"Theme: {Theme}, Path to the file: {PathToFile}, File extension: {FileExtension}");
+            Console.ReadKey();
         }
     }
 }

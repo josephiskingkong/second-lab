@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SingletonOutputData
+namespace second_lab
 {
     class Program
     {
@@ -13,54 +13,34 @@ namespace SingletonOutputData
             switch (Menu.Instance.GetUserMenuInput())
             {
                 case 1:
-                    DisplayHTMLData();
+                    HTML HTMLDoc = new HTML("HTML", "Genius..", "HTML keywords", "HTML Theme...", "C:/User/DungeonMaster/index.html", ".html",
+                        "JavaScript, CSS, PHP etc.");
+                    HTMLDoc.InfoOut();
                     break;
                 case 2:
-                    DisplayTXTData();
+                    TXT TXTDoc = new TXT("TXT", "Realy bad boy..", "TXT keywords", "TXT Theme...", "C:/User/BROOO/nudes.txt", ".txt",
+                        "MacOS, Windows, Ubuntu, Linux etc.");
+                    TXTDoc.InfoOut();
                     break;
                 case 3:
-                    DisplayWordData();
+                    Word WordDoc = new Word("Word", "Realy bad boy.. again...", "Word keywords", "Word Theme...", "C:/User/GodLover/Pray.word", ".word",
+                        "Arial", "Special WORD PROPERTY -90% ONLY NOW");
+                    WordDoc.InfoOut();
                     break;
                 case 4:
-                    DisplayExcelData();
+                    Excel ExcelDoc = new Excel("Excel", "Mimimimicrosoft", "Excel keywords", "Ecxel Theme...", "C:/User/letmedie/mylasttable.xls", ".xls",
+                        999, 999);
+                    ExcelDoc.InfoOut();
                     break;
                 case 5:
-                    DisplayPDFData();
+                    PDF PDFDoc = new PDF("PDF", "who are you bro?", "PDF keywords", "PDF Theme...", "C:/User/letmedie/iAmDIFFERENT", ".pdf",
+                        ".txt, .word, .ptx, .pptx etc.");
+                    PDFDoc.InfoOut();
                     break;
                 default:
                     Console.WriteLine("Invalid option selected. Please try again");
                     break;
             }
-        }
-
-        // Displays data related to HTML class
-        private static void DisplayHTMLData()
-        {
-            Console.WriteLine("HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.");
-        }
-
-        // Displays data related to TXT class
-        private static void DisplayTXTData()
-        {
-            Console.WriteLine("TXT files are plain text files stored in the text file format. It contains unformatted text and is viewable in any text editor.");
-        }
-
-        // Displays data related to Word class
-        private static void DisplayWordData()
-        {
-            Console.WriteLine("Microsoft Word is a word processing application from Microsoft Office. It enables users to create, modify, view and print documents.");
-        }
-
-        // Displays data related to Excel class
-        private static void DisplayExcelData()
-        {
-            Console.WriteLine("Microsoft Excel is a spreadsheet application from Microsoft Office. It enables users to create, manage and store complex data in tabular formats with formulas and calculations.");
-        }
-
-        // Displays data related to PDF class
-        private static void DisplayPDFData()
-        {
-            Console.WriteLine("The Portable Document Format (PDF) is an open standard for document exchange developed by Adobe Systems. It allows users to display a document exactly as the author intended, regardless of the software and hardware used.");
         }
 
         // Menu singleton class
@@ -111,7 +91,9 @@ namespace SingletonOutputData
                     return -1;
                 }
             }
+            
         }
+
 
     }
 }
